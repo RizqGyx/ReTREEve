@@ -1,4 +1,4 @@
-//
+    //
 //  ReTREEveApp.swift
 //  ReTREEve
 //
@@ -6,12 +6,36 @@
 //
 
 import SwiftUI
+import UIKit
+import SwiftData
 
 @main
 struct ReTREEveApp: App {
+    init() {
+        NavigationTitleFonts.apply()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
+        .modelContainer(for: ReadingInsight.self)
+    }
+}
+
+private enum NavigationTitleFonts {
+    static func apply() {
+        let bar = UINavigationBar.appearance()
+        bar.largeTitleTextAttributes = [.font: rounded(.largeTitle, bold: true)]
+        bar.titleTextAttributes = [.font: rounded(.headline, bold: false)]
+    }
+
+    private static func rounded(_ style: UIFont.TextStyle, bold: Bool) -> UIFont {
+        let base = UIFont.preferredFont(forTextStyle: style)
+        var descriptor = base.fontDescriptor.withDesign(.rounded) ?? base.fontDescriptor
+        if bold, let emphasized = descriptor.withSymbolicTraits(.traitBold) {
+            descriptor = emphasized
+        }
+        return UIFont(descriptor: descriptor, size: base.pointSize)
     }
 }
