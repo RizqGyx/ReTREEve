@@ -4,8 +4,8 @@
   <h1>ReTREEve</h1>
 
   <p>
-    <strong>Simpan kutipan buku. Temukan lagi saat hanya sebagian yang diingat.</strong><br>
-    Aplikasi iOS untuk menangkap, menyimpan, dan mencari kembali insight dari bacaan.
+    <strong>Simpan passage yang bermakna. Temukan kembali meski hanya sebagian yang diingat.</strong><br>
+    Aplikasi iOS untuk menangkap passage dari buku fisik, menyimpannya, dan menemukannya kembali dari partial memory.
   </p>
 
   <p>
@@ -21,7 +21,9 @@
 
 ## Tentang proyek
 
-ReTREEve adalah aplikasi iOS untuk menyimpan dan menemukan kembali bagian buku yang berkesan. Pengguna dapat memindai halaman yang diberi tanda, mengimpor foto, atau menulis kutipan secara manual; kemudian mencari kembali sebuah insight dengan kata-kata yang tidak harus persis sama dengan kutipan aslinya.
+ReTREEve adalah aplikasi iOS untuk membantu pembaca buku fisik menyimpan passage yang mereka anggap bermakna dan menemukannya kembali ketika dibutuhkan, bahkan ketika mereka hanya mengingat sebagian kata, topik, situasi, atau maknanya.
+
+Passage dapat ditambahkan dengan memindai halaman yang sudah ditandai, mengimpor foto, atau memasukkannya secara manual. Saat mencari kembali, pengguna tidak perlu mengingat kalimat secara persis; ReTREEve menampilkan beberapa possible matches dari koleksi mereka sendiri.
 
 > Proyek ini menargetkan **iOS 26.0** dan memakai framework Apple terbaru, termasuk Foundation Models. Jalankan pada Xcode/SDK yang mendukung iOS 26.
 
